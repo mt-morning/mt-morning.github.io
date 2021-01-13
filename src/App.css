@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;1,300&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Barlow', sans-serif;
 }
 
 /* .App-link {
@@ -8,4 +12,17 @@
 
 .app-logo {
   text-align: left;
+  background-color: slategrey;
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 300%;
+  color: rgb(255, 255, 255);
+}
+
+.header-item {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
 }

@@ -6,13 +6,12 @@ export default class Navigation extends Component {
         return (
             <section id="header">
 				<header>
-					<h1 id="logo">Miranda Tran</h1>
-					<p>I got reprogrammed by a rogue AI<br />
-					and now I'm totally cray</p>
+					<h1 id="logo"><NavLink exact to='/'>Miranda Tran</NavLink></h1>
+					<p>MSCS student at Northeastern, seeking co-op/internship for Summer/Fall 2021.<br />
+                    Enjoys learning about new technologies, Twitch, and making dinner rolls.</p>
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><NavLink exact to='/'>Home</NavLink></li>
 						<li><NavLink to='/projects'>Projects</NavLink></li>
 						<li><NavLink to='/education'>Education</NavLink></li>
 						<li><NavLink to='googmle.com'>Contact</NavLink></li>

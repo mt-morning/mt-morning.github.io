@@ -21,6 +21,7 @@ section, summary, time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  text-align: left;
   vertical-align: baseline; }
 
 article, aside, details, figcaption, figure,
@@ -1208,7 +1209,7 @@ input[type="radio"] + label:before {
   .icon.solid:before {
     font-weight: 900; }
   .icon.brands:before {
-    font-family: 'Font Awesome 5 Brands'; }
+    font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free'; }
 
 /* Image */
 .image {

@@ -3,8 +3,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './components/Home'
 import Project from './components/Projects';
 import Education from './components/Education';
-import Navigation from './components/Navigation';
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
@@ -15,6 +15,8 @@ function App() {
 
             <div id='main'>
               <div className='inner'>
+
+                <Header />
                 
                 <Route exact path='/' component={Home} />
                 <Route path='/projects' component={Project} />
@@ -23,7 +25,7 @@ function App() {
 
             </div>
 
-            <Header />
+            <Sidebar />
 
           </div>
         </div>

@@ -19,7 +19,7 @@
 .env.production.local
 
 .eslintcache
-html5up-read-only
+html5up-editorial
 package-lock.json
 
 npm-debug.log*

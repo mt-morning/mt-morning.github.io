@@ -17,8 +17,14 @@ export default class Projects extends Component {
             }};
             projects.push(
                 <article>
-                    <img src={project.imagePath} alt={'Image showing a screen capture of ' + project.projectName} />
-                    <Link to={linkDestination}>{project.projectName}</Link>
+                    <Link className='image' to={linkDestination}>
+                        <img 
+                        src={project.imagePath}
+                        alt={'Image showing a screen capture of ' + project.projectName} 
+                        />
+                    </Link>
+                    <h3>{project.projectName}</h3>
+                    <Link to={linkDestination}></Link>
                 </article>
             );
         }

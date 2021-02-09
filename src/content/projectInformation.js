@@ -5,7 +5,7 @@ const projects = [
                   I worked with three classmates to create a plagiarism detector implemented in 
                   TypeScript to identify plagiarized JavaScript code.`,
         path: 'plagiarismdetector',
-        imagePath: '../content/imgs/plagiarismdetector.png'
+        imagePath: 'images/plagiarismdetector.png'
         
     },
     {
@@ -14,7 +14,7 @@ const projects = [
                   we implemented an inventory tracker using the MERN stack and Heroku 
                   to keep track of product information and quantity and orders.`,
         path: 'inventorymanager',
-        imagePath: '../content/imgs/inventorymanager.png'
+        imagePath: 'images/inventorymanager_resized.png'
     },
 ];
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import projecInfo from '../content/projectInformation';
 
 export default class Project extends Component {
     constructor(props) {
@@ -16,11 +17,18 @@ export default class Project extends Component {
     }
 
     render() {
+        if (!this.props.location.state.content) {
+
+        }
+
         return (
-            <div>
-                {this.state.name}! <br />
+            <section>
+                <header className='main'>
+                    <h1>{this.state.name}</h1>
+                </header>
+
                 {this.props.location.state.content}
-            </div>
+            </section>            
         )
     }
 }

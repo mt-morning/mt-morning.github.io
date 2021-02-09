@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import projecInfo from '../content/projectInformation';
+import { projectInfo } from '../content/projectInformation';
 
+/**
+ * Currently, the image doesn't render, so ...
+ */
 export default class Project extends Component {
     constructor(props) {
         super(props);
@@ -17,17 +20,22 @@ export default class Project extends Component {
     }
 
     render() {
-        if (!this.props.location.state.content) {
-
+        const projectName = this.state.name;
+        let project;
+        if (projectName !== null) {
+            project = projectInfo[projectName]
         }
+        let projectImage = project ? <img src={project.imagePath} alt=''/> : null
 
         return (
             <section>
                 <header className='main'>
-                    <h1>{this.state.name}</h1>
+                    <h1>{project ? project.projectName : null}</h1>
                 </header>
 
-                {this.props.location.state.content}
+                {project ? project.content : null}
+                {projectImage}
+                <img src={'images/inventorymanager_resized.png'} alt=''/>
             </section>            
         )
     }

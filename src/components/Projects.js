@@ -1,30 +1,36 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {projectInfo} from '../content/projectInformation';
+import { projectInfo, projectMeta} from '../content/projectInformation';
 
 export default class Projects extends Component {
-    buildProjectComponenets() {
+    buildProjectComponents() {
         const projects = [];
 
         // loops through information and build link that passes info
         // to the component to build out the project page
-        for (const project of projectInfo) {
-            const linkDestination = {
-                pathname: 'projects/' + project.path,
-                state: {
-                    name: project.projectName,
-                    content: project.content
-            }};
+        for (const path of projectMeta) {
+            // const linkDestination = {
+            //     pathname: 'projects/' + path,
+            //     state: {
+            //         name: path,
+            //         content: projectInfo[path].content
+            // }};
+
+            const linkDestination = projectInfo[path].repo;
+
             projects.push(
                 <article>
-                    <Link className='image' to={linkDestination}>
+                    <a className='image' href={linkDestination}>
                         <img 
-                        src={project.imagePath}
-                        alt={'Image showing a screen capture of ' + project.projectName} 
+                        src={projectInfo[path].imagePath}
+                        alt={'Image showing a screen capture of ' + projectInfo[path].projectName} 
                         />
-                    </Link>
-                    <h3>{project.projectName}</h3>
-                    <Link to={linkDestination}></Link>
+                    </a>
+                    <h3>{projectInfo[path].projectName}</h3>
+                    <p>{projectInfo[path].content}</p>
+                    <ul class="actions">
+                        <li><a className='button' href={linkDestination}>See GitHub repository</a></li>
+                    </ul>
                 </article>
             );
         }
@@ -33,13 +39,12 @@ export default class Projects extends Component {
     }
 
     render() {
-        console.log(projectInfo);
         return (
             <section>
                 <header className='major'>
                     <h2>Projects</h2>
                 </header>
-                <div class='posts'>{this.buildProjectComponenets()}</div>
+                <div class='posts'>{this.buildProjectComponents()}</div>
             </section>
         )
     }

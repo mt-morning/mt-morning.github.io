@@ -1,10 +1,11 @@
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './components/Home'
-import Project from './components/Projects';
+import Projects from './components/Projects';
 import Education from './components/Education';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
+import Project from './components/Project';
 
 function App() {
   return (
@@ -19,8 +20,14 @@ function App() {
                 <Header />
                 
                 <Route exact path='/' component={Home} />
-                <Route path='/projects' component={Project} />
-                <Route path='/education' component={Education} />
+                <Route exact path='/projects' component={Projects} />
+                <Route exact path='/education' component={Education} />
+                <Route exact 
+                  path='/projects/:name' 
+                  render={(props) => (
+                    <Project {...props} name={props.match.params.name} />
+                  )} 
+                />
               </div>
 
             </div>

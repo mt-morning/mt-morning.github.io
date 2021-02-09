@@ -45,6 +45,7 @@ export default class Home extends Component {
                     </div>
                 </div>
                     
+                <hr className='major' />
                 
                 <p>To see some of my work, be sure to check out the projects section and my GitHub!</p>
                 <p>Finally, I am now looking for an internship or co-op (Summer/Fall 2021) to apply the skills I have learned 

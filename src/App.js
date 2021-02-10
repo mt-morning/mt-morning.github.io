@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Route, HashRouter as Router } from 'react-router-dom';
 import Home from './components/Home'
 import Projects from './components/Projects';
 import Education from './components/Education';
@@ -10,7 +10,7 @@ import Project from './components/Project';
 function App() {
   return (
       <div className='App'>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Router basename={process.env.PUBLIC_URL}>
           <div id='wrapper'>
 
             <div id='main'>
@@ -34,7 +34,7 @@ function App() {
             <Sidebar />
 
           </div>
-        </BrowserRouter>
+        </Router>
       </div>
   );
 }

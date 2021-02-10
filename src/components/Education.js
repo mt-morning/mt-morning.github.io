@@ -43,8 +43,9 @@ export default class Education extends Component {
                                 <ul>
                                     <li>Foundations of Software Engineering (CS5500)</li>
                                     <li>Web Development (CS5610)</li>
-                                    <li>Natural Language Processing (NLP) (CS6120</li>
+                                    <li>Natural Language Processing (NLP) (CS6120)</li>
                                     <li>Algorithms (CS5800)</li>
+                                    <li>Object Oriented Design (CS5004)</li>
                                     <li>...and others!</li>
                                 </ul>
                             </div>

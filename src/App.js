@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Route, HashRouter as Router } from 'react-router-dom';
 import Home from './components/Home'
 import Projects from './components/Projects';
 import Education from './components/Education';
@@ -10,7 +10,7 @@ import Project from './components/Project';
 function App() {
   return (
     
-      <BrowserRouter>
+      <Router>
         <div className='App'>
           <div id='wrapper'>
 
@@ -37,7 +37,7 @@ function App() {
           </div>
         </div>
       
-      </BrowserRouter>
+      </Router>
     
   );
 }

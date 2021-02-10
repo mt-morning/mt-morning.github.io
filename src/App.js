@@ -10,7 +10,7 @@ import Project from './components/Project';
 function App() {
   return (
       <div className='App'>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <div id='wrapper'>
 
             <div id='main'>

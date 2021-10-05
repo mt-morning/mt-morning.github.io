@@ -42,7 +42,7 @@ export default class Sidebar extends Component {
                             <li><NavLink to='/'>Home</NavLink></li>
                             <li><NavLink to='/projects'>Projects</NavLink></li>
                             <li><NavLink to='/education'>Education</NavLink></li>
-                            <li><a href='https://drive.google.com/file/d/15cA5QB288-LV9JlduYUB7gg2Bh7lW5ZP/view?usp=sharing'>Resume</a></li>
+                            <li><a href='https://drive.google.com/file/d/1vzQiyXW0QVdgGxcCaMeUAAyBgWJ5DZeE/view?usp=sharing'>Resume</a></li>
                         </ul>
                         
                     </nav>

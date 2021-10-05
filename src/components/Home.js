@@ -15,7 +15,7 @@ export default class Home extends Component {
                 </span>
 
                 <hr className='major' />
-                <p>Hi! My name is Miranda Tran and I am currently a Master of Computer Science 
+                <p>Hi! My name is Miranda Tran, and I am currently a Master of Computer Science 
                     (MSCS) student at Northeastern University through Align! This program is 
                     a pathway for non-CS majors—an English major and Education minor like me!—to 
                     learn more about the computer science industry 
@@ -28,9 +28,11 @@ export default class Home extends Component {
                                 <li>Natural Language Processing (CS6120)</li>
                                 <li>Web Development (CS5610)</li>
                                 <li>Foundations of Software Engineering (CS5500)</li>
-                                <li>...and so on!</li>
+                                <li>Database Managment Systems (CS5200)</li>
+                                <li>UI Development (CS7580)</li>
+                                <li>and others!</li>
                             </ul>
-                            Currently, I am studying Database Managment Systems (CS5200) and UI Development (CS7580).</p>
+                        </p>
                     </div>
 
                     <div className='col-6 col-12-small'>
@@ -40,7 +42,7 @@ export default class Home extends Component {
                             computer science course and excelled in the coursework. More so, I found that I enjoyed the process 
                             of solving a problem, incrementally and programmatically! With the encouragement of my professors, 
                             I applied for and entered the Align program and I am grateful that I have this opportunity to develop a strong foundation 
-                            in computer science and hopefully combine my own love of English into my future career.
+                            in computer science and hopefully combine my own love of English and the communication skills I have developed into my future career.
                         </p>
                     </div>
                 </div>
@@ -49,12 +51,11 @@ export default class Home extends Component {
                 
                 <p>To see some of my work, be sure to check out the projects section and my GitHub!</p>
                 <div className='box'>
-                    <p>Finally, I am looking for an internship or co-op (Summer/Fall 2021) to apply the skills I have learned 
-                    and to learn or expand my knowledge of new technologies! Please contact me for any opportunities through 
+                    <p>Finally, I am looking for a full-time, software engineering role further develop the skills I have learned 
+                    and expand my knowledge of new technologies! Please contact me for any opportunities through 
                     my LinkedIn or through my email!
                     </p>
                 </div>
-                
             </>
         )
     }

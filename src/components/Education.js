@@ -23,24 +23,25 @@ export default class Education extends Component {
                             <div className="content">
                                 <h3>About</h3>
                                 <p>Location: Boston, MA. <br />
-                                Expected Graduation: Fall 2021 or Spring 2022</p>
+                                Expected Graduation: May 2022</p>
                             </div>
                         </article>
-                        <article>
+                        {/* <article>
                             <span className="icon fa-folder-open"></span>
                             <div className="content">
                                 <h3>Current Coursework</h3>
                                 <ul>
-                                    <li>UI Development (CS7580)</li>
-                                    <li>Database Management Systems (CS5200)</li>
+                                    
                                 </ul>
                             </div>
-                        </article>
+                        </article> */}
                         <article>
                             <span className="icon fa-folder"></span>
                             <div className="content">
                                 <h3>Courses</h3>
                                 <ul>
+                                    <li>UI Development (CS7580)</li>
+                                    <li>Database Management Systems (CS5200)</li>
                                     <li>Foundations of Software Engineering (CS5500)</li>
                                     <li>Web Development (CS5610)</li>
                                     <li>Natural Language Processing (NLP) (CS6120)</li>
@@ -64,13 +65,13 @@ export default class Education extends Component {
                             <div className="content">
                                 <h3>About</h3>
                                 <p>Location: Wellesley, MA. <br />
-                                Graduated: Fall 2021 or Spring 2022</p>
+                                Graduated: May 2019</p>
                             </div>
                         </article>
                         <article>
                             <span className="icon fa-folder"></span>
                             <div className="content">
-                                <h3>Courses</h3>
+                                <h3>Relevant Courses</h3>
                                 <ul>
                                     <li>Computer Programming and Problem Solving (CS111)</li>
                                     <li>Data Structures (CS230)</li>
@@ -90,7 +91,7 @@ export default class Education extends Component {
                             <div className="content">
                                 <h3>About</h3>
                                 <p>Location: New York, NY. <br />
-                                Graduated: May 2019</p>
+                                Graduated: May 2015</p>
                             </div>
                         </article>
                     </div>
